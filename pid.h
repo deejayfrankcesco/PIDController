@@ -85,7 +85,7 @@ public:
 	bool Use_Limits;
 	void Set_Limits(const Limits& outL, const Limits& intL);
 
-	PID_Controller& operator=(const PID_Controller& other_controller);//TODO
+	PID_Controller& operator=(const PID_Controller& other_controller);
 
 	Com_Result Compute(const float& error, float& out);
 
