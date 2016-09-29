@@ -52,7 +52,6 @@ PID_Controller& PID_Controller::operator=(const PID_Controller& other_controller
 	return *this;
 }
 
-
 //Reset state
 inline void PID_Controller::Reset_State(){
 	Integration_Term = 0;
