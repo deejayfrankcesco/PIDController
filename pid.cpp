@@ -41,7 +41,7 @@ PID_Controller::PID_Controller(const PID_Controller& controller){
 }
 
 //Assignement operator
-PID_Controller& operator=(const PID_Controller& other_controller){
+PID_Controller& PID_Controller::operator=(const PID_Controller& other_controller){
 	Param = other_controller.Param;
 	Time_Rate = other_controller.Time_Rate;
 	Out_Limits = other_controller.Out_Limits;
@@ -49,6 +49,7 @@ PID_Controller& operator=(const PID_Controller& other_controller){
 	Controller = other_controller.Controller;
 	Use_Limits = other_controller.Use_Limits;
 	Reset_State();
+	return *this;
 }
 
 
